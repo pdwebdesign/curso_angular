@@ -20,7 +20,8 @@ Give examples
 
 - [x] Apresentação
 - [x] Ferramentas
-- [ ] Criando um projeto
+- [x] Criando um projeto
+- [] Entendendo o Projeto
 
 ### Installing
 
