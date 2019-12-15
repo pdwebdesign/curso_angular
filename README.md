@@ -1,6 +1,4 @@
-# Project Title
-
-Curso Começando com Angular 
+# Curso Começando com Angular 
 
 [https://app.balta.io/courses/7181](https://app.balta.io/courses/7181)
 
@@ -35,7 +33,7 @@ npm install -g @angular/cli
 
 ## Authors
 
-* **Pedro Duarte** - *Initial work* - [PurpleBooth](http://pdwebdesign.com.br/)
+* **Pedro Duarte** - *Initial work* - [PDWebDesign](http://pdwebdesign.com.br/)
 
 Ou acesse o [github](https://github.com/pdwebdesign/) 
 
