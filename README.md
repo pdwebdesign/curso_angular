@@ -21,7 +21,8 @@ npm 6.9.0
 - [x] Apresentação
 - [x] Ferramentas
 - [x] Criando um projeto
-- [ ] Entendendo o Projeto
+- [X] Entendendo o Projeto
+- [ ] Módulos e Componentes
 
 ### Installing
 
@@ -30,6 +31,11 @@ Crie um repositorio instale o Angular CLI com o comando:
 ```
 npm install -g @angular/cli
 ```
+
+### Anotações
+
+O Angular funciona principalmente atráves de module e component.
+Quando é iniciado a APP o arquivo main.ts é chamado.
 
 ## Authors
 
