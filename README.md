@@ -21,8 +21,10 @@ npm 6.9.0
 - [x] Apresentação
 - [x] Ferramentas
 - [x] Criando um projeto
-- [X] Entendendo o Projeto
-- [ ] Módulos e Componentes
+- [x] Entendendo o Projeto
+- [x] Módulos e Componentes
+- [x] Rodando a aplicação
+- [ ] Variãveis e Tipos
 
 ### Installing
 
