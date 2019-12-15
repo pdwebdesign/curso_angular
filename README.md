@@ -26,10 +26,30 @@ npm 6.9.0
 
 ### Installing
 
-Crie um repositorio instale o Angular CLI com o comando:
+Criar um repositorio instale o Angular CLI com o comando:
 
 ```
 npm install -g @angular/cli
+```
+
+Criar uma nova aplicação com angular:
+
+```
+ng new nome_da_aplicacao
+```
+
+Criar um servidor live acoplado ao angular: 
+Isso deve ser utilizado apenas em dev.
+Esse comando deve ser executado dentro da aplicacao criado com o ng new nome_da_aplicacao
+
+```
+npm serve
+```
+
+Para abrir o browser depois de executar o servidor utilize o comando:
+
+```
+npm serve -o
 ```
 
 ### Anotações
