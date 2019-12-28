@@ -27,8 +27,8 @@ npm 6.9.0
 - [x] 7. Variãveis e Tipos
 - [x] 8. Exibindo Dados
 - [x] 9. Objetos Complexos
-- [ ] 10. ngIf
-- [ ] 11. Removendo um item
+- [x] 10. ngIf
+- [x] 11. Removendo um item
 - [ ] 12. Alterando um item
 - [ ] 13. Form Básico
 - [ ] 14. E ibindo as Validações
