@@ -18,13 +18,31 @@ npm 6.9.0
 
 ### Aulas
 
-- [x] Apresentação
-- [x] Ferramentas
-- [x] Criando um projeto
-- [x] Entendendo o Projeto
-- [x] Módulos e Componentes
-- [x] Rodando a aplicação
-- [ ] Variãveis e Tipos
+- [x] 1. Apresentação
+- [x] 2. Ferramentas
+- [x] 3. Criando um projeto
+- [x] 4. Entendendo o Projeto
+- [x] 5. Módulos e Componentes
+- [x] 6. Rodando a aplicação
+- [x] 7. Variãveis e Tipos
+- [x] 8. Exibindo Dados
+- [x] 9. Objetos Complexos
+- [ ] 10. ngIf
+- [ ] 11. Removendo um item
+- [ ] 12. Alterando um item
+- [ ] 13. Form Básico
+- [ ] 14. E ibindo as Validações
+- [ ] 15. Desabilitando o Botão  
+- [ ] 16. Adicionando uma Tarefa 
+- [ ] 17. Salvando os Itens 
+- [ ] 18. Lendo os Itens 
+- [ ] 19. Estilizando o Corpo da Página 
+- [ ] 20. Estilizando os Itens  
+- [ ] 21. Estilizando o Botão 
+- [ ] 22. Alternando as Visualizações  
+- [ ] 23. Estilizando o Formulário  
+- [ ] 24. Estilizando as Ações da Lista  
+- [ ] 25. Build e Toques Finais  
 
 ### Installing
 
