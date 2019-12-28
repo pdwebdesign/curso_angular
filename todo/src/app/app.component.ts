@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent { // Quando utilizamos export no TS, estamos criando uma class publica
   // title = 'todo';
+  public todos: any[] = [];
+  public title: String = 'Lista de Tarefas'
+
+  /**
+   *
+   */
+  constructor() {
+    this.todos.push('Aprender Angular');
+    this.todos.push(new Date());
+  }
 }
