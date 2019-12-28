@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Todo } from 'src/models/todo.model';
 
 @Component({ // Cria metadados para a nossa classe, nesse caso um seletor, um html e um estilo.
   selector: 'app-root', // aqui é transformado em uma tag html
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent { // Quando utilizamos export no TS, estamos criando uma class publica
   // title = 'todo';
-  public todos: any[] = [];
+  public todos: Todo[] = [];
   public title: String = 'Lista de Tarefas'
 
   /**
