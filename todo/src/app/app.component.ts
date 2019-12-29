@@ -65,6 +65,11 @@ export class AppComponent { // Quando utilizamos export no TS, estamos criando u
 
   load() {
     const data = localStorage.getItem('todos');
-    this.todos = JSON.parse(data);
+    if (data) {
+      this.todos = JSON.parse(data);
+    }
+    else{
+      this.todos = [];
+    }
   }
 }
