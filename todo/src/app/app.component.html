@@ -6,6 +6,18 @@
     <button (click)="remove(todo)">REMOVER</button></li>
   </ul> 
 
+  <form [formGroup]="form"> <!-- [] estamos chamando do TS para o HTML -->
+    <fieldset>
+      <label for="">Tarefa: </label>
+      <input 
+        type="text" 
+        placeholder="Título da Tarefa" 
+        maxlength="60" 
+        formControlName="title"> <!-- Vinculando com o elemento dentro do app.component title -->
+      <button>Salvar</button>
+    </fieldset>
+  </form>
+
 <!-- () = HTML > TS
 [] = TS > HTML
 [()] = TS <> HTML -->

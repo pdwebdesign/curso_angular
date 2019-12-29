@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms'; // importa o Grupo de formulario, ja temos alguns validators padrao ou custom validators que podemos criar
 import { Todo } from 'src/models/todo.model'; // importa a classe Todo
+
 
 @Component({ // Cria metadados para a nossa classe, nesse caso um seletor, um html e um estilo.
   selector: 'app-root', // aqui é transformado em uma tag html
@@ -9,11 +11,20 @@ import { Todo } from 'src/models/todo.model'; // importa a classe Todo
 export class AppComponent { // Quando utilizamos export no TS, estamos criando uma class publica
   // title = 'todo';
   public todos: Todo[] = [];
-  public title: String = 'Lista de Tarefas'
+  public title: String = 'Lista de Tarefas';
+  public form: FormGroup; // Como a tela pode ter varios formularios é necessario criar um Grupo de formulario
+
   /**
    *
    */
-  constructor() {
+  constructor(private fb: FormBuilder) {
+    this.form = this.fb.group({
+      title: ['', Validators.compose([ // Colocarmos o Validators.compose([]) caso tenha mais de uma validação no meu formulário
+        Validators.minLength(3),// O titulo da tarefa tem que ter no minimo 3 caracteres e no maximo 60
+        Validators.maxLength(60),
+        Validators.required
+      ])]
+    });
     this.todos.push(new Todo(1, 'Comprar ovo', false));
     this.todos.push(new Todo(2, 'Terminar curso', true));
     this.todos.push(new Todo(3, 'Terminar curso webcompleto', false));

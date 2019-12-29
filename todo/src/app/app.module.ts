@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms' // É necessario importar para utilizar dentro do imports
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +9,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule // importar o modulo de formularios do Angular, nâo vem como padrão
   ],
   providers: [],
   bootstrap: [AppComponent] // chama o app component
