@@ -29,7 +29,7 @@ npm 6.9.0
 - [x] 9. Objetos Complexos
 - [x] 10. ngIf
 - [x] 11. Removendo um item
-- [ ] 12. Alterando um item
+- [x] 12. Alterando um item
 - [ ] 13. Form Básico
 - [ ] 14. E ibindo as Validações
 - [ ] 15. Desabilitando o Botão  
