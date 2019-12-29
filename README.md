@@ -41,7 +41,7 @@ npm 6.9.0
 - [x] 21. Estilizando o Botão 
 - [x] 22. Alternando as Visualizações  
 - [x] 23. Estilizando o Formulário  
-- [ ] 24. Estilizando as Ações da Lista  
+- [x] 24. Estilizando as Ações da Lista  
 - [ ] 25. Build e Toques Finais  
 
 ### Installing
