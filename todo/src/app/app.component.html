@@ -8,20 +8,28 @@
         <button (click)="remove(todo)">REMOVER</button>
     </li>
 </ul> 
-<div id="modal" *ngIf="mode=='add'" class="animated flipInX">
+<div *ngIf="mode=='add'" class="modal animated flipInX">
+    <h1 class="text-center">Nova Tarefa</h1>
     <form [formGroup]="form"> <!-- [] estamos chamando do TS para o HTML -->
-        <fieldset>
-            <label for="">Tarefa: </label>
-            <input 
-            type="text" 
-            placeholder="Título da Tarefa" 
-            maxlength="60" 
-            formControlName="title"> <!-- Vinculando com o elemento dentro do app.component title -->
-            <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>  
-            <!-- <button *ngIf="form.controls.title.valid">Salvar</button> -->
-            <button class="button" [disabled]="form.invalid" (click)="add()" (click)="save()">Salvar</button>
-        </fieldset>
+        <input 
+        type="text" 
+        placeholder="Título da Tarefa" 
+        maxlength="60" 
+        formControlName="title"> <!-- Vinculando com o elemento dentro do app.component title -->
+        <p>
+            <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">
+                Este campo deve conter entre 3 e 60 caracteres<br>
+            </small>  
+        </p>    
+        <!-- <button *ngIf="form.controls.title.valid">Salvar</button> -->
+        <p class="text-center">
+            <button class="button" [disabled]="form.invalid" (click)="add()" (click)="save()">
+                <i class="far fa-save"></i>
+                Salvar
+            </button>
+        </p>
     </form>
+    <br>
 </div>    
 
 <button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">

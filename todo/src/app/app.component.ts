@@ -61,6 +61,7 @@ export class AppComponent { // Quando utilizamos export no TS, estamos criando u
   save() {
     const data = JSON.stringify(this.todos);
     localStorage.setItem('todos', data); // adiciona no localStorage com chave todos e valor data
+    this.mode = 'list';
   }
 
   load() {
