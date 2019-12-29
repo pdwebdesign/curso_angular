@@ -25,9 +25,17 @@ export class AppComponent { // Quando utilizamos export no TS, estamos criando u
         Validators.required
       ])]
     });
-    this.todos.push(new Todo(1, 'Comprar ovo', false));
-    this.todos.push(new Todo(2, 'Terminar curso', true));
-    this.todos.push(new Todo(3, 'Terminar curso webcompleto', false));
+  }
+
+  add() {
+    const title = this.form.controls['title'].value;
+    const id = this.todos.length + 1;
+    this.todos.push(new Todo(id,title,false));
+    this.clear();
+  }
+
+  clear() {
+    this.form.reset();
   }
 
   remove(todo: Todo) {
