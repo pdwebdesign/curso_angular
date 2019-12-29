@@ -17,7 +17,7 @@
         formControlName="title"> <!-- Vinculando com o elemento dentro do app.component title -->
       <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>  
       <!-- <button *ngIf="form.controls.title.valid">Salvar</button> -->
-      <button [disabled]="form.invalid" (click)="add()">Salvar</button>
+      <button [disabled]="form.invalid" (click)="add()" (click)="save()">Salvar</button>
     </fieldset>
   </form>
 
