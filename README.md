@@ -30,16 +30,16 @@ npm 6.9.0
 - [x] 10. ngIf
 - [x] 11. Removendo um item
 - [x] 12. Alterando um item
-- [ ] 13. Form Básico
-- [ ] 14. E ibindo as Validações
-- [ ] 15. Desabilitando o Botão  
-- [ ] 16. Adicionando uma Tarefa 
-- [ ] 17. Salvando os Itens 
-- [ ] 18. Lendo os Itens 
-- [ ] 19. Estilizando o Corpo da Página 
-- [ ] 20. Estilizando os Itens  
-- [ ] 21. Estilizando o Botão 
-- [ ] 22. Alternando as Visualizações  
+- [x] 13. Form Básico
+- [x] 14. Exibindo as Validações
+- [x] 15. Desabilitando o Botão  
+- [x] 16. Adicionando uma Tarefa 
+- [x] 17. Salvando os Itens 
+- [x] 18. Lendo os Itens 
+- [x] 19. Estilizando o Corpo da Página 
+- [x] 20. Estilizando os Itens  
+- [x] 21. Estilizando o Botão 
+- [x] 22. Alternando as Visualizações  
 - [ ] 23. Estilizando o Formulário  
 - [ ] 24. Estilizando as Ações da Lista  
 - [ ] 25. Build e Toques Finais  

@@ -1,28 +1,38 @@
-  <h1 class="title">Minhas Tarefas</h1>
-  <ul>
+<h1 class="title animated jackInTheBox">Minhas Tarefas</h1>
+<ul class="animated flipInX" *ngIf="mode=='list'">
     <p *ngIf="todos.length==0"><small>Nâo tem nenhuma tarefa hoje.</small></p>
     <li *ngFor = "let todo of todos">
-      {{ todo.title }} 
-      <button *ngIf="!todo.done" (click)="markAsDone(todo)">CONCLUIR</button>
-      <button *ngIf="todo.done" (click)="markAsUndone(todo)">REFAZER</button> 
-      <button (click)="remove(todo)">REMOVER</button>
+        {{ todo.title }} 
+        <button *ngIf="!todo.done" (click)="markAsDone(todo)">CONCLUIR</button>
+        <button *ngIf="todo.done" (click)="markAsUndone(todo)">REFAZER</button> 
+        <button (click)="remove(todo)">REMOVER</button>
     </li>
-  </ul> 
+</ul> 
+<div id="modal" *ngIf="mode=='add'" class="animated flipInX">
+    <form [formGroup]="form"> <!-- [] estamos chamando do TS para o HTML -->
+        <fieldset>
+            <label for="">Tarefa: </label>
+            <input 
+            type="text" 
+            placeholder="Título da Tarefa" 
+            maxlength="60" 
+            formControlName="title"> <!-- Vinculando com o elemento dentro do app.component title -->
+            <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>  
+            <!-- <button *ngIf="form.controls.title.valid">Salvar</button> -->
+            <button class="button" [disabled]="form.invalid" (click)="add()" (click)="save()">Salvar</button>
+        </fieldset>
+    </form>
+</div>    
 
-  <form [formGroup]="form"> <!-- [] estamos chamando do TS para o HTML -->
-    <fieldset>
-      <label for="">Tarefa: </label>
-      <input 
-        type="text" 
-        placeholder="Título da Tarefa" 
-        maxlength="60" 
-        formControlName="title"> <!-- Vinculando com o elemento dentro do app.component title -->
-      <small *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 e 60 caracteres</small>  
-      <!-- <button *ngIf="form.controls.title.valid">Salvar</button> -->
-      <button class="button" [disabled]="form.invalid" (click)="add()" (click)="save()">Salvar</button>
-    </fieldset>
-  </form>
+<button class="add-button animated fadeInUp button" (click)="changeMode('add')" *ngIf="mode=='list'">
+    <i class="fas fa-plus-circle"></i>
+    NOVA TAREFA
+</button>
 
+<button class="add-button animated fadeInUp button" (click)="changeMode('list')" *ngIf="mode=='add'">
+    <i class="fas fa-times"></i>
+    CANCELAR
+</button>
 <!-- () = HTML > TS
 [] = TS > HTML
 [()] = TS <> HTML -->

@@ -9,9 +9,9 @@ import { Todo } from 'src/models/todo.model'; // importa a classe Todo
   styleUrls: ['./app.component.css']
 })
 export class AppComponent { // Quando utilizamos export no TS, estamos criando uma class publica
-  // title = 'todo';
+  public mode = 'list';
   public todos: Todo[] = [];
-  public title: String = 'Lista de Tarefas';
+  public title = 'Lista de Tarefas';
   public form: FormGroup; // Como a tela pode ter varios formularios é necessario criar um Grupo de formulario
 
   /**
@@ -71,5 +71,9 @@ export class AppComponent { // Quando utilizamos export no TS, estamos criando u
     else{
       this.todos = [];
     }
+  }
+
+  changeMode(mode: string)   {
+    this.mode = mode;
   }
 }
