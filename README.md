@@ -2,6 +2,10 @@
 
 [https://app.balta.io/courses/7181](https://app.balta.io/courses/7181)
 
+# Acessar online o projeto
+
+[https://www.pdwebdesign.com.br/todo/index.html](https://www.pdwebdesign.com.br/todo/index.html)
+
 ## Getting Started
 
 Aprenda os fundamentos de um dos melhores e mais famosos Frameworks JS.
